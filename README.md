@@ -66,3 +66,7 @@ Since no encryption (TLS) was used, the password is fully visible in plain text 
 * Network Protocol Analysis (HTTP, TCP/IP)
 * Wireshark Proficiency
 * Security Vulnerability Identification (CWE-319)
+
+---
+
+⚠️ **Disclaimer:** This project was conducted in a 100% legal, local environment (localhost). It is strictly for educational purposes to demonstrate network security principles.
