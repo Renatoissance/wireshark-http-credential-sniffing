@@ -8,7 +8,7 @@ This project demonstrates the critical security risks of unencrypted communicati
 The goal is to show how sensitive information (usernames/passwords) is transmitted in **plain text** over standard HTTP, making it vulnerable to interception.
 
 ## ⚙️ Environment & Tools
-* **Packet Analyzer:** Wireshark 4.x
+* **Packet Analyzer:** Wireshark 4.6.4
 * **Local Server:** Apache (via XAMPP)
 * **Capture Interface:** Npcap Loopback Adapter (127.0.0.1)
 * **Lab Files:** Custom HTML/PHP login form (included in `/src`)
