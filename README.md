@@ -52,7 +52,7 @@ Since no encryption (TLS) was used, the password is fully visible in plain text 
 ---
 
 ## 📁 Resources & Lab Files
-* **[Packet Capture](./captures/http_login_capture.pcapng):** Raw network data.
+* **[Packet Capture](./capture/http_login_capture.pcapng):** Raw network data.
 * **[Source Code](./src/):** Unencrypted HTML/PHP files.
 
 ---
