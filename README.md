@@ -67,7 +67,7 @@ I generated a self-signed RSA 2048-bit certificate using **OpenSSL** and reconfi
 
 | Browser Trust Warning | Certificate Details |
 | :---: | :---: |
-| <img src="./img/browser_warning.png" width="400" alt="Mozilla trust alert"> | <img src="./img/grafik.png" width="400" alt="RSA-2048 certificate details"> |
+| <img src="./img/browser_warning.png" width="400" alt="Mozilla trust alert"> | <img src="./img/certificate_details.png" width="400" alt="RSA-2048 certificate details"> |
 | *Figure 4a: Mozilla trust alert (Self-signed).* | *Figure 4b: RSA-2048 certificate for 'localhost'.* |
 
 ### 5. Final Verification: Encrypted Traffic
