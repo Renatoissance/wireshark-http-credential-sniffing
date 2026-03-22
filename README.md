@@ -63,12 +63,12 @@ I generated a self-signed RSA 2048-bit certificate using **OpenSSL** and reconfi
 * **Certificate Subject:** `O=Renatoissance, CN=localhost`
 * **Encryption Standard:** RSA-2048 / SHA-256
 * **Protocol:** TLS 1.3 (Modern Standard)
-* **Note on Trust:** Browsers correctly flag the connection as "Not Secure" (see Fig. 4) because the certificate is **self-signed**. While the identity isn't verified by a public CA, the **cryptographic tunnel** is fully functional.
+* **Note on Trust:** Browsers correctly flag the connection as "Not Secure" (see Fig. 4a) because the certificate is **self-signed**. While the identity isn't verified by a public CA, the **cryptographic tunnel** is fully functional.
 
-<p align="center">
-  <img src="./img/certificate_details.png" alt="SSL Certificate Details" />
-</p>
-<p align="center"><em>Figure 4: Custom RSA certificate and browser trust warning.</em></p>
+| Browser Trust Warning | Certificate Details |
+| :--- | :--- |
+| ![Browser Warning](./img/browser_warning.png) | ![Certificate Details](./img/certificate_details.png) |
+| *Figure 4a: Mozilla does not recognize the self-signed authority.* | *Figure 4b: RSA-2048 certificate details for 'localhost'.* |
 
 ### 5. Final Verification: Encrypted Traffic
 To verify the fix, I re-captured the login process. The difference in the network layer is absolute:
