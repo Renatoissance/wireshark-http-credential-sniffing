@@ -1,13 +1,13 @@
-# 🔐 Network Traffic Analysis: From Plaintext Leaks to TLS 1.3 Hardening
+# Network Traffic Analysis: From Plaintext Leaks to TLS 1.3 Hardening
 
 This project demonstrates the critical security risks of unencrypted communication and the subsequent remediation using modern cryptographic standards. It features a complete workflow from intercepting credentials to securing a local environment using **Wireshark**, **OpenSSL**, and **XAMPP**.
 
 ---
 
-## 📌 Objective
+## Objective
 The goal is to show how sensitive information (usernames/passwords) is transmitted in **plain text** over standard HTTP, making it vulnerable to interception, and how to effectively mitigate this using **SSL/TLS**.
 
-## ⚙️ Environment & Tools
+## Environment & Tools
 * **Packet Analyzer:** Wireshark 4.6.4
 * **Local Server:** Apache (via XAMPP)
 * **Encryption:** OpenSSL (RSA-2048)
@@ -16,7 +16,7 @@ The goal is to show how sensitive information (usernames/passwords) is transmitt
 
 ---
 
-## 🧪 Methodology
+## Methodology
 1. **Lab Setup:** Deployed a local Apache server using XAMPP to host a non-HTTPS login page.
 2. **Traffic Capture:** Initiated a capture on the **Npcap Loopback Adapter** to intercept localhost traffic.
 3. **Simulation:** Performed a login attempt with dummy credentials.
@@ -25,7 +25,7 @@ The goal is to show how sensitive information (usernames/passwords) is transmitt
 
 ---
 
-## 🔍 Part 1: Vulnerability Research (The Attack)
+## Part 1: Vulnerability Research (The Attack)
 In this phase, I analyzed standard HTTP traffic to identify how sensitive data is transmitted in an unencrypted environment.
 
 ### 1. User Interface & Interaction
@@ -54,7 +54,7 @@ Since no encryption was used, the password is fully visible in plain text within
 
 ---
 
-## 🛡️ Part 2: Security Hardening (The Remediation)
+## Part 2: Security Hardening (The Remediation)
 After identifying the risk, I implemented **SSL/TLS encryption** to secure the communication channel.
 
 ### 4. Implementation of SSL/TLS
@@ -83,18 +83,18 @@ To verify the fix, I re-captured the login process. The difference in the networ
 
 ---
 
-## 📁 Resources & Lab Files
+## Resources & Lab Files
 * **[Packet Capture](./capture):** Raw `.pcapng` data for both HTTP and TLS captures.
 * **[Source Code](./src/):** Unencrypted HTML/PHP files used in the lab.
 
 ---
 
-## 🛡️ Security Implications & Mitigation
+## Security Implications & Mitigation
 * **Encryption:** Use **HTTPS** (TLS) to encrypt data in transit.
 * **Integrity:** TLS prevents unauthorized modification (Tampering) of packets.
 * **Best Practice:** Never transmit sensitive data over unencrypted channels (CWE-319).
 
-## 📊 Skills Demonstrated
+## Skills Demonstrated
 * Network Protocol Analysis (HTTP, TCP/IP, TLS 1.3)
 * Wireshark Proficiency (Deep Packet Inspection & Filtering)
 * Infrastructure Hardening (SSL/TLS Configuration & OpenSSL)
